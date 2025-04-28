@@ -1,0 +1,368 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+
+.bg_image{
+    z-index: -1999999;
+    background-image: url(./Images/engine.jpg);
+    width: 100%;
+    height: 70vh;
+}
+
+header{
+    z-index: 999;
+    position: absolute;
+    background-color: #ffffff91;
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        box-shadow: 0px 0px 20px 0px gainsboro;
+    padding: 20px;
+    backdrop-filter: blur(11.3px);
+}
+
+header img {
+    border: 2px solid #000;
+    border-radius: 50%;
+    height: 50px;
+    width: auto;
+}
+
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 50%;
+}
+
+header ul li{
+    font-size: 15px;
+}
+
+header ul li a:hover{
+    color: #1791c8;
+}
+
+header ul li a i{
+    color: #1791c8;
+}
+
+header ul li a{
+    transition: all .4s ease;
+text-decoration: none;
+color: gray;
+font-weight: bold;
+}
+
+.login_btn:hover{
+color: #1791c8;
+cursor: pointer;
+border: 2px solid #1791c8;
+    box-shadow: 0px 0px 20px 0px gainsboro;
+}
+
+.login_btn{
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    transition: all .4s ease;
+    background-color: transparent;
+     color: gray;
+
+}
+
+span{
+    color: aqua;
+}
+
+
+.main-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+        backdrop-filter: blur(5.3px);
+padding: 40px;
+border-radius: 8px;
+}
+
+.main-div h1{
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    transition: all 0.2s;
+    margin: 0px 0px 50px 0px;
+    border-bottom: 4px solid rgba(144, 241, 241, 0);
+    text-align: center;
+}
+
+.main-div h1:hover{
+    border-bottom: 4px solid rgb(144, 241, 241);
+}
+
+#search-form input{
+    padding: 20px 70px;
+    font-size: 25px;
+    border-radius: 8px;
+    outline: 0;
+    border: 0;
+    width: 100%;
+}
+
+::placeholder{
+    color: gray;
+}
+
+#search-form button{
+    position: absolute;
+    right: 40px;
+    background-color: transparent;
+    font-size: 25px;
+    border: none;
+    padding: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: gray;
+    transition: all .4s ease;
+}
+
+#search-form button:hover{
+background-color: rgba(128, 128, 128, 0.24);
+}
+
+#search-form button img{
+  height: auto;
+  width: 25px;
+}
+
+.search_logo{
+    position: absolute;
+    left: 40px;
+      height: 70px;
+      border-radius: 8px;
+      width: auto;
+}
+
+.down_list{
+    margin: 20px;
+}
+
+.down_list ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.down_list ul .down_list_li{
+    font-size: 20px;
+    color: gray;
+    font-weight: bold;
+    border: 2px solid gray;
+    padding: 20px 50px;
+    border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+    transition: all .2s ease;
+
+}
+
+.down_list ul .down_list_li:hover{
+    background-color: rgba(7, 218, 255, 0.199);
+    box-shadow: 0px 0px 20px 0px gainsboro;
+    border: 2px solid #000;
+    color: #000;
+}
+
+.down_list_li svg{
+    transition: all .2s ease;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+
+}
+
+.down_list ul .down_list_li:hover svg{
+    color: #1791c8;
+       transform: translateY(-8px);
+}
+
+.Free_img{
+    margin: 10px 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.Free_img h2{
+    margin: 10px;
+    
+}
+
+.more_btn_center{
+    display: flex;
+    justify-content: center;
+}
+
+#show_more_btn{
+    margin: 40px 0;
+     background-color: transparent;
+     border: 2px solid gray;
+     font-size: 25px;
+     padding: 10px 30px;
+     border-radius: 8px;
+     outline: 0;
+     color: gray;
+     cursor: pointer;
+     display: none;
+     transition: all .2s ease;
+}
+
+#show_more_btn:hover{
+    border: 2px solid #000;
+    color: #000;
+        box-shadow: 0px 0px 20px 0px gainsboro;
+}
+
+footer{
+    height: 100px;
+    width: 100%;
+    background-color: #333;
+}
+
+#search-result{
+    margin: 50px;
+    /* width: 80%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: stretch;
+}
+
+#search-result img{
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all .4s ease;
+    /* z-index: 1; */
+}
+
+#search-result img:hover{
+    transform: scale(1.1);
+    
+}
+
+@keyframes scale-a-lil {
+  from {
+    scale: .6;
+  }
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+  #search-result img {
+    animation: scale-a-lil linear both;
+    animation-timeline: view();
+    animation-range: 10vh 45vh;
+  }
+}
+/* ............................................ */
+
+@media only screen and (max-width: 600px) {
+
+header{
+    padding: 10px 20px;
+}
+
+header img {
+    height: 30px;
+}
+
+    header ul li a {
+        font-size: 12px;
+    }
+.login_btn {
+padding: 5px 10px;
+font-size: 12px;
+}
+
+.main-div h1{
+    font-size: 25px;
+    word-spacing: 4px;
+}
+
+#search-result img{
+    height: 200px;
+}
+
+#search-result{
+     grid-template-columns: 1fr 1fr;
+        margin: 50px 0px;
+}
+
+.main-div{
+    width: 90%;
+    padding: 20px;
+}
+
+#search-form input{
+    padding: 10px 40px;
+    height: 50px;
+    font-size: 15px;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+.search_logo{
+    left: 0;
+    height: 50px;
+    border-right: 2px solid gray;
+}
+
+#search-form button {
+    padding: 9px;
+    right: 20px;
+}
+
+.down_list ul{
+     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.down_list ul .down_list_li{
+    
+    height: 100px;
+    width: 100px;
+}
+
+#search-form button img{
+width: 20px;
+}
+
+#search-resul{
+    margin: 20px 0 0 0;
+}
+
+#show_more_btn{
+    margin: 20px 0;
+    padding: 5px 10px;
+font-size: 10px;
+}
+
+footer{
+    height: 50px;
+}
+
+}
